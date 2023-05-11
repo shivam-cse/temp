@@ -13,7 +13,7 @@ To use the scripts, run the `verbo-diag.py` scripts from command line and pass t
 - `timestamp`(optional): Specify the timestamp in the format `YYYY-MM-DD HH:MM:SS`. Scripts will analyze the tshoot log file at given timestamp.
 
 if no `timestamp` is specified, the scripts will use the latest tshoot log file.
-python3
+
 Here's an example command:
 ```bash
 python3 verbo-diag.py  "{\"task\":\"memdebug\", \"timestamp\":\"2023-02-17 05:26:43\"}" 
