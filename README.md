@@ -16,7 +16,9 @@ if no `timestamp` is specified, the scripts will use the latest tshoot log file.
 
 Here's an example command:
 ```bash
-python3 verbo-diag.py  "{\"task\":\"memdebug\", \"timestamp\":\"2023-02-17 05:26:43\"}" 
+- python3 verbo-diag.py  "{\"task\":\"memdebug\", \"timestamp\":\"2023-02-17 05:26:43\"}" 
+
+- request diagnostics verbo-diag parameters "{\"task\":\"cpudebug\", \"timestamp\":\"2023-04-03 06:59:24\"}"
 ```
 The script will analyze the system log file and output a summary of high memory/CPU usage it finds, based on the task specified and the timestamp provided.
 
@@ -42,7 +44,7 @@ Final sample output format (JSON):
                                                            "    2            6642      48432398       48425756",
                                                            "    3            1943      43504648       43502705", 
                                                            "    4            2993      41264355       41261362" ]
-                 },                                      
+                 }                                       
     "version": "3.8.10 (default, Mar 13 2023, 10:26:41) \\n[GCC 9.4.0]", 
     "task": "memdebug"
 }
